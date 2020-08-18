@@ -1,0 +1,107 @@
+body {
+  font-size: 18px;
+}
+
+.content {
+  width: min-content;
+  margin: 0 auto;
+  
+}
+
+.area {
+  border: solid 2px black;
+  height: 20px;
+  width: 250px;
+
+}
+
+.address-area {
+  border: solid 2px black;
+  height: 50px;
+  width: 250px;
+}
+
+
+.radiobtn {
+  margin-left: 30px;
+}
+
+.men {
+  width: 15px;
+  margin-right: 20px;
+}
+.rady {
+  width: 15px;
+  margin-right: 50px;
+}
+
+.send {
+  text-align: right;
+}
+
+#send {
+  border: solid 2px black;
+  background-color: #fff;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+#yes, #no {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border: solid 2px black;
+  outline: 0;
+  font-size: 15px;
+}
+
+#yes {
+  margin: 20px 80px 70px 0;
+}
+
+
+
+#mask {
+  background-color: rgba(203, 203, 203, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background-color: #fff;
+  width: 330px;
+  height: 600px;
+  padding: 40px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+  z-index: 2;
+}
+
+#modal > p {
+  margin-bottom: 40px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -1000px);
+}
+
+.error {
+  color: red;
+}

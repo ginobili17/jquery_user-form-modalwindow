@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <div class="content">
+    <p>ユーザー登録</p>
+
+    <form action="" id="form" class="form">
+      <p>名前</p>
+      <input id="name" class="area" type="text" name="name" data-error_placement="#name_error">
+      <p>カナ</p>
+      <input id="kana" class="area" type="text" name="kana" data-error_placement="#kana_error">
+      <p>郵便番号</p>
+      <input id="postnum" class="area" type="text" name="postnum" data-error_placement="#postnum_error">
+      <p>住所（市町村）</p>
+      <input id="towns" class="area" type="text" name="towns" data-error_placement="#towns_error">
+      <p>住所（番地　及び　建物名）</p>
+      <textarea id="address" class="address-area" name="address" data-error_placement="#address_error"></textarea>
+      <p>性別</p>
+      <div>
+        男
+        <input type="radio" class="radiobtn men" name="sex" value="男" data-error_placement="#sex_error">
+        女
+        <input type="radio" class="radiobtn rady" name="sex" value="女">
+      </div>
+  
+      <div class="send">
+        <p id="send">送信</p>
+      </div>
+
+      
+    </form>
+    
+    <!-- 全体を灰色にする -->
+    <div id="mask" class="hidden"></div>
+  
+    <section id="modal" class="hidden">
+      <p id="confirmation">以下の内容で登録しますか？</p>
+      <input type="submit" id="yes" value="yes">
+      <button id="no">no</button>
+  
+      <p id="modal-name"></p>
+      <p id="modal-kana"></p>
+      <p id="modal-postnum"></p>
+      <p id="modal-address"></p>
+      <p id="modal-sex"></p>
+    </section>
+  </div>
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
